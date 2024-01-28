@@ -18,9 +18,9 @@ export class AuthService {
 
   }
 
-  login(loginrequest : any): Observable<any>{
+  login(loginRequest : any): Observable<any>{
 
-    return this.http.post<[]>(BASIC_URL+"api/auth/login",loginrequest)
+    return this.http.post<[]>(BASIC_URL+"api/auth/login",loginRequest)
 
   }
 

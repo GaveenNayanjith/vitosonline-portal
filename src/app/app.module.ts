@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SignupComponent } from './auth-components/signup/signup.component';
 import { DemoNgZorroAntdModule } from './DemoNgZorroAntdModule';
 import { LoginComponent } from './auth-components/login/login.component';
+//import { PizzaComponent } from './modules/home/pizza-components/pizza/pizza.component';
 
 registerLocaleData(en);
 
@@ -20,7 +21,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    //PizzaComponent
   ],
   imports: [
     BrowserModule,
