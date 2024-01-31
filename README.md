@@ -1,27 +1,12 @@
 # Vitosonline
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
+- This Repository is the frontend application for the https://github.com/GaveenNayanjith/VitosPizzaBackend
 
-## Development server
+## _Steps to Setting-Up the project_
+1. Clone the backend repository from https://github.com/GaveenNayanjith/VitosPizzaBackend and load the pom.xml as a Maven project
+2. Clone the frontend repository from deploy it by using the command "ng serve"
+3. Go to **src/main/resources/application.properties** in this repository and change the DB and port settings as per your requirements
+4. Run the Main class to launch the backend application
+5. Go to the browser and load up **https://localhost:(your_specified_port_number_for_ng)/home/category** to got to the first page of the application.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   **You will have to populate the tabels once it is created as they will be empty**
