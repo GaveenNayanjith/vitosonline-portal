@@ -20,10 +20,10 @@ export class PizzaComponent {
   getPizza(){
     this.Pizza=[];
     this.pizzaService.getAllPizzaByCategory(this.categoryId).subscribe((res) =>{
-      res.foreach((element: { processedImg: string; returnedImg: string; }) =>{
-        element.processedImg = 'data: image/jpeg; base64' + element.returnedImg;
+      console.log(res);
+      res.forEach(element => {
         this.Pizza.push(element);
-      });
+      })
     });
   }
 

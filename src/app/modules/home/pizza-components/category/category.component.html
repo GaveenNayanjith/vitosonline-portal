@@ -1,1 +1,20 @@
-<p>category works!</p>
+<div style="background-color: #f8f8f8; min-height: 91vh;">
+    <div style="padding-top: 10px;"></div>
+
+    <div style="margin-top: 10px;" class="child" *ngFor="let category of Category">
+        <div nz-row>
+            <div nz-col nzSpan="8">
+                    {{category.id}}
+            </div>
+            <div nz-col nzSpan="16">
+                <h3>Category Name : <b>{{category.categoryName}}</b></h3>
+                <h3>Category Description <b>{{category.description}}</b></h3>
+                <hr>
+                <div style="float: left;">
+                    <button nzSize="small" nz-button nzType="primary"
+                    routerLink="/home/{{category.id}}/pizza">View Pizza</button>
+                </div>
+
+        </div>
+
+    </div>

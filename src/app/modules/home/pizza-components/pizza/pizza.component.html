@@ -3,21 +3,16 @@
 
     <div style="margin-top: 10px;" class="child" *ngFor="let pizza of Pizza">
         <div nz-row>
-            <div nz-col nzSpan="8">
-                <img [src]="pizza.processedImg" alt="profile" class="profile" style="height: 130px; width: 200px; border-radius: 10px;">
-            </div>
-
             <div nz-col nzSpan="16">
                 <h2 style="cursor: pointer; color: #108ee9;">
                     {{pizza.name}}
                 </h2>
                 <hr>
-                <h5>Price: <b>{{pizza.price}}</b>
-                    - Description : <b>{{pizza.description}}</b>
-                    - Category : <b>{{pizza.categoryName}}</b>
-                </h5>
+                <h3>Price: <b>{{pizza.price}}</b></h3>
+                <h3>Description : <b>{{pizza.description}}</b></h3>                    
+            
                 <hr>
-                <div style="float: right;">
+                <div style="float: left;">
                     <button nzSize="small" nz-button nzType="primary"
                     routerLink="/login">Order Now!</button>
                 </div>
